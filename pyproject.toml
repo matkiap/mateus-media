@@ -8,7 +8,7 @@ readme = "README.md"
 packages=[{include = "mateus_media"}]
 classifiers = [
     "Topic :: Education",
-    "Enviroment :: Console",
+    "Environment :: Console",  # Corrigido aqui
     "Natural Language :: Portuguese (Brazilian)",
     "Development Status :: 5 - Production/Stable",
     "Programming Language :: Python :: 3.11",
