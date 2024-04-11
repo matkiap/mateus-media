@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def calcular_medias_mensais(file_path_radiacoes, mes):
     """
     Calcula as médias horárias de radiação para um mês específico.
@@ -21,7 +22,7 @@ def calcular_medias_mensais(file_path_radiacoes, mes):
     df = pd.read_excel(file_path_radiacoes)
 
     # Preencher valores nulos na coluna 'radiacao' com a média da coluna
-    df['radiacao'].fillna(df['radiacao'].mean(), inplace=True)
+    df['radiacao'] = df['radiacao'].fillna(df['radiacao'].mean())
 
     # Filtrar o DataFrame para o mês especificado pelo usuário
     df_mes = df[df['data'].dt.month == mes]
@@ -40,12 +41,14 @@ def calcular_medias_mensais(file_path_radiacoes, mes):
             df_dia.groupby('hora')['radiacao'].mean().reset_index()
         )
         media_horaria_dia['data'] = df_dia['data'].iloc[0].strftime('%d/%m')
-        media_horaria_mes = pd.concat([media_horaria_mes, media_horaria_dia])
-
-    # Renomear a coluna de média de radiação
-    media_horaria_mes.rename(
-        columns={'radiacao': 'média da radiação'}, inplace=True
-    )
+        media_horaria_mes = pd.concat(
+            [
+                media_horaria_mes,
+                media_horaria_dia.rename(
+                    columns={'radiacao': 'média da radiação'}
+                ),
+            ]
+        )
 
     # Retornar o DataFrame com as médias horárias
     return media_horaria_mes

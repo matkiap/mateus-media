@@ -5,8 +5,13 @@ description = ""
 authors = ["Mateus <mateus.kaiss@ufpr.br>"]
 readme = "README.md"
 
+[tool.poetry.scripts]
+medias = "mateus_media.cli:app"
+
 [tool.poetry.dependencies]
 python = "^3.11"
+typer = "^0.12.3"
+rich = "^13.7.1"
 
 
 [tool.poetry.group.dev.dependencies]

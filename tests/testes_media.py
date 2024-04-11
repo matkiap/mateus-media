@@ -44,8 +44,7 @@ def test_calcular_medias_mensais(exemplo_dataframe):
     assert (
         resultado_janeiro['média da radiação'].mean() == 10
     )  # Verifica se a média é 10
-    
-    # Testa se a função lança uma exceção quando o caminho do arquivo não existe
-    with pytest.raises(FileNotFoundError, match="caminho não encontrado"):
-        calcular_medias_mensais('caminho/inexistente/arquivo.xlsx', 1)
 
+    # Testa se a função lança uma exceção quando o caminho do arquivo não existe
+    with pytest.raises(FileNotFoundError, match='caminho não encontrado'):
+        calcular_medias_mensais('caminho/inexistente/arquivo.xlsx', 1)
