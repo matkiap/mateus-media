@@ -18,7 +18,7 @@ classifiers = [
 "Chave" = "Valor"
 "Documentação" = ""
 "Código" = "https://github.com/matkiap/mateus-media"
-"Bug Tracker = "https://github.com/matkiap/mateus-media/issues"
+"Bug Tracker" = "https://github.com/matkiap/mateus-media/issues"
 "Doação" = "https://apoia.se/livedepython
 
 [tool.poetry.scripts]
