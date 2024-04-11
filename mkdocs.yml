@@ -4,7 +4,7 @@ repo_name: matkiap/mateus-media
 edit_uri: tree/main/docs
 
 theme:
-  name: material
+  name: mkdocs
   language: pt-BR
   logo: assets/logo.png
   favicon: assets/logo.png
@@ -16,7 +16,6 @@ extra_css:
   - stylesheet/extra.css
   
 plugins:
-- macros:
 - mkdocstrings:
     handlers:
       python:
