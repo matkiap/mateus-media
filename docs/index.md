@@ -1,13 +1,19 @@
 ![logo do projeto](assets/logo.png){ width="300" .center }
 # mateus-media
 
+mateus-media é um projeto desenvolvido como treinamento para o estágio na empresa PSR que visa selecionar um conjunto de médias horárias e baseado nisso fornecer a média horária dos dados fornecidos.
+
+{%include "templates/cards.html" %}
+
+{%include "templates/instalacao.md" %}
 
 ## Como usar?
 
 Você pode chamar os valores de radiação via linha de comando. Por exemplo para o mês de janeiro:
 
+
 ```bash
-poetry run medias "arquivo_excel\dados.xlsx" 1
+medias "arquivo_excel\dados.xlsx" 1
 ```
 
 O primeiro parâmetro é o arquivo em excel chamado entre aspas; o segundo, o mês que se deseja calcular a média horário (valores aceitos de 1 a 12).

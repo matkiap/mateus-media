@@ -16,10 +16,17 @@ extra_css:
   - stylesheet/extra.css
   
 plugins:
+- macros:
 - mkdocstrings:
     handlers:
       python:
         paths: [mateus_media]
+
+extra:
+  commands:
+    run: poetry run medias
+
+
 
 
 
