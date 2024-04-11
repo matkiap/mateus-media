@@ -15,7 +15,6 @@ classifiers = [
 ]
 
 [tool.poetry.urls]
-"Documentação" = ""
 "Código" = "https://github.com/matkiap/mateus-media"
 "Bug Tracker" = "https://github.com/matkiap/mateus-media/issues"
 "Doação" = "https://apoia.se/livedepython"
