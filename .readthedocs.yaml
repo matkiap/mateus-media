@@ -12,10 +12,12 @@ build:
 
 mkdocs:
   configuration: mkdocs.yml
-  python:
-    version: 3.11
-    install:
-      - method: poetry
+
+python:
+  install:
+    - method: poetry
+      path: .
+
 # Optionally declare the Python requirements required to build your docs
 # python:
 #  install:
