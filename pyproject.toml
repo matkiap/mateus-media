@@ -4,6 +4,21 @@ version = "0.1.0"
 description = ""
 authors = ["Mateus <mateus.kaiss@ufpr.br>"]
 readme = "README.md"
+packages=[{include = "mateus_media"}]
+classifiers = [
+    "Topic :: Education",
+    "Enviroment :: Console",
+    "Natural Language :: Portuguese (Brazilian)",
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3.11",
+]
+
+[tool.poetry.urls]
+"Chave" = "Valor"
+"Documentação" = ""
+"Código" = "https://github.com/matkiap/mateus-media"
+"Bug Tracker = "https://github.com/matkiap/mateus-media/issues"
+"Doação" = "https://apoia.se/livedepython
 
 [tool.poetry.scripts]
 medias = "mateus_media.cli:app"
