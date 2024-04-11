@@ -19,7 +19,7 @@ classifiers = [
 "Documentação" = ""
 "Código" = "https://github.com/matkiap/mateus-media"
 "Bug Tracker" = "https://github.com/matkiap/mateus-media/issues"
-"Doação" = "https://apoia.se/livedepython
+"Doação" = "https://apoia.se/livedepython"
 
 [tool.poetry.scripts]
 medias = "mateus_media.cli:app"
