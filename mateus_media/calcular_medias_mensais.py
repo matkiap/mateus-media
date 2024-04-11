@@ -1,23 +1,24 @@
-import math
 import pandas as pd
-
 
 def calcular_medias_mensais(file_path_radiacoes, mes):
     """
     Calcula as médias horárias de radiação para um mês específico.
 
     Parameters:
-        file_path (str): O caminho para o arquivo Excel contendo os dados.
+        file_path_radiacoes (str): O caminho para o arquivo Excel contendo os dados.
         mes (int): O número do mês desejado (entre 1 e 12).
 
     Returns:
         pandas.DataFrame: DataFrame contendo as médias horárias de radiação.
 
+    Raises:
+        FileNotFoundError: Se o caminho do arquivo especificado não for encontrado.
+
     Examples:
         >>> calcular_medias_mensais('dados_de_média.xlsx', 3)
     """
     # Carregar os dados do arquivo Excel
-    df = pd.read_excel(file_path_radiações)
+    df = pd.read_excel(file_path_radiacoes)
 
     # Preencher valores nulos na coluna 'radiacao' com a média da coluna
     df['radiacao'].fillna(df['radiacao'].mean(), inplace=True)
@@ -48,10 +49,3 @@ def calcular_medias_mensais(file_path_radiacoes, mes):
 
     # Retornar o DataFrame com as médias horárias
     return media_horaria_mes
-
-
-# Exemplo de uso:
-file_path = 'dados_de_média.xlsx'
-mes = int(input('Digite o número do mês desejado (entre 1 e 12): '))
-resultado = calcular_medias_mensais(file_path_radiacoes, mes)
-print(resultado)
