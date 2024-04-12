@@ -10,16 +10,7 @@
     align-items: center;
 }
 
-.card{
-    border-radius: 5;
-    box-shadow: 7px 7px 7px 7px #ededed;
-    padding: 30px;
-    margin: 30px;
-    transition: all 0,3s ease-out;
-    width: 500px;
-    border-top: solid #ededed;
 
-}
 
 .card:hover{
 
