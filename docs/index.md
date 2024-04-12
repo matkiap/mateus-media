@@ -1,7 +1,7 @@
 ![logo do projeto](assets/logo.png){ width="300" .center }
 # mateus-media
 
-mateus-media é um projeto desenvolvido como treinamento para o estágio na empresa PSR que visa selecionar um conjunto de médias horárias e baseado nisso fornecer a média horária dos dados fornecidos.
+mateus-media é um projeto desenvolvido como treinamento para o estágio na empresa PSR que visa selecionar um conjunto de dados horários de radiação e baseado nisso fornecer a média horária dos dados fornecidos.
 
 ## Como usar?
 Você pode chamar os valores de radiação via linha de comando. Por exemplo para o mês de janeiro:
